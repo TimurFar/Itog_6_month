@@ -24,9 +24,6 @@ Console.WriteLine (); // Выводим пустую строку
 Console.WriteLine ("Промежуточный массив"); // Выводим сообщение
 Console.WriteLine ($"[{String.Join(',', NewArray)}]"); // Выводим массив в одну строку
 
-// Console.WriteLine ();
-// Console.WriteLine ("Элементов массива  <=3 " + Index);
-
 Console.WriteLine (); // Выводим пустую строку
 Console.WriteLine ("Итоговый массив"); // Выводим сообщение
 int newIndex = 0;
