@@ -11,9 +11,7 @@ Console.WriteLine ("Исходный массив");
 Console.WriteLine ($"[{String.Join(',', Array)}]");
 
 int Index = 0;
-
 string [] NewArray = new string[size];
-
 for (int i = 0; i < size; i++)
 {
     if (Array[i].Length <=3)
@@ -25,3 +23,20 @@ for (int i = 0; i < size; i++)
 Console.WriteLine ();
 Console.WriteLine ("Промежуточный массив");
 Console.WriteLine ($"[{String.Join(',', NewArray)}]");
+
+// Console.WriteLine ();
+// Console.WriteLine ("Элементов массива  <=3 " + Index);
+Console.WriteLine ();
+Console.WriteLine ("Итоговый массив");
+int newIndex = 0;
+string [] ResultArray = new string [Index];
+for (int i = 0; i < Index; i++)
+{
+if (NewArray[i].Length <=3)
+    {
+    ResultArray[newIndex] = NewArray [i];
+    newIndex++;
+    }
+}
+Console.WriteLine ($"[{String.Join(',', ResultArray)}]");
+Console.WriteLine ();
